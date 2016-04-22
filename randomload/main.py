@@ -53,4 +53,9 @@ def test():
     volume_delete(clients, conf)
 
 if __name__ == '__main__':
-    run()
+    try:
+        run()
+    except KeyboardInterrupt:
+        print()
+        raise SystemExit
+
